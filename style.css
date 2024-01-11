@@ -1,0 +1,188 @@
+/*Chat GPT */
+body {
+  margin: 0;
+  padding: 0;
+}
+/*main div*/
+#container {
+  background-color: rgb(246, 196, 134);
+  border: solid 5px blueviolet;
+  top: 0; /* Stick to the top of the window */
+  left: 0; /* Stick to the left of the window */
+  width: 100%; /* Take up the full width of the window */
+  height: 100%; /* Set the height as needed */
+
+  z-index: 999; /* Set a high z-index to make sure it's on top */
+  position: fixed; /* Set position to fixed */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+/* size of the content*/
+#small {
+  background-color: antiquewhite;
+  border: 5px solid purple;
+  width: 70%;
+  height: 70%;
+  display: flex;
+}
+#rightbar {
+  background-color: aqua;
+  margin-top: 2vw;
+  border-radius: 10px;
+  width: 75%;
+  margin-left: 1vw;
+  display: flex;
+}
+#leftbar {
+  width: 25%;
+}
+#profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-left: -0.5vw;
+  padding: 0;
+  margin-top: 2vw;
+}
+img {
+  width: 4vw;
+  margin: 0vw 0.6vw 0.5vw 0.5vw;
+  padding: 0;
+}
+#content {
+  margin-right: 5vw;
+  padding: 0;
+  margin: 0;
+}
+#name {
+  margin: 0;
+  font-size: 0.8rem;
+  float: left;
+  /* text-decoration: line-through; */
+}
+.deleteButton {
+  text-decoration: line-through;
+}
+#email {
+  margin: 0;
+  font-size: 0.7rem;
+  margin-right: 0.5vw;
+}
+#search {
+  width: 93%;
+  margin: 0.5vw;
+  margin-left: 1vw;
+  border-radius: 5px;
+  height: 2.3vw;
+}
+
+/*leftbar menu*/
+#leftmenu {
+  margin: 1vw;
+  padding: 1vw;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#myday,
+#important,
+#planned,
+#assigned,
+#flagged,
+#tasks,
+#gettingstarted,
+#groceries,
+#newlist {
+  margin: 0.25vw;
+  border: 2px;
+  border-radius: 5px;
+  padding: 0.2vw;
+}
+#newlist {
+  margin-top: 2vw;
+  list-style: none;
+}
+
+#right-container {
+  width: 100%;
+  height: 100%;
+  border: solid;
+}
+#right-container-main {
+  width: 90%;
+  margin-left: 2.5vw;
+  display: flex;
+  background-color: white;
+  border-radius: 3px;
+}
+#img-note {
+  width: 15vw;
+  height: 15vw;
+  margin-top: -25vw;
+}
+#p-text {
+  margin-top: -5vw;
+}
+#ul-div {
+  display: grid;
+  place-items: center;
+  margin-top: 3vw;
+  margin-bottom: 2.5vw;
+}
+#right-container-main-2 {
+  display: flex;
+  width: 25%;
+}
+#right-container-main-1 {
+  width: 90%;
+}
+#task-input {
+  width: 88%;
+  height: 2.5vw;
+}
+
+#ul-list {
+  width: 100%;
+  height: 18vw;
+}
+li {
+  border: solid 1px;
+  list-style: none;
+  font-size: large;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0.5vw;
+  padding: 0.5vw;
+  padding-left: 1.5vw;
+  width: 88.5%;
+}
+li:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: solid 1px;
+  list-style: none;
+  font-size: large;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0.5vw;
+  padding: 0.5vw;
+  padding-left: 1.5vw;
+}
+
+#draggable-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 5px;
+  cursor: grab;
+  transition: background-color 0.3s ease;
+}
+
+li.dragging {
+  background-color: #f0f0f0;
+}

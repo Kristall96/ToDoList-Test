@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do-List</title>
+</head>
+<body>
+    <div id="container">
+        <div id="small">
+        <div id="leftbar">
+            <div id="profile">
+                <img src="/img/avatar.png" alt="">
+            <div id="content">
+                <h4 id="name"><strong>Erkan Shakir</strong></h4>
+                <p id="email">erkanshakir@outlook.com</p>
+            </div> 
+            </div>
+            <input id="search" type="search" placeholder="Search"> <!--trqbva da sloja search ikona-->
+            <div id="leftmenu">
+                <div id="myday">MyDay</div>
+                <div id="important">Important</div>
+                <div id="planned">Planned</div>
+                <div id="assigned">Assigned to me</div>
+                <div id="flagged">Flagged email</div>
+                <div id="tasks">Tasks</div>
+                <div id="line"></div><!--trqbva da sloja liniq-->
+                <div id="gettingstarted">Getting Started</div>
+                <div id="groceries">Groceries</div>
+                <div id="newlist">New List</div>
+            </div>
+        </div>
+        <div id="rightbar">
+            <div id="right-container">
+                <div id="ul-div">
+                    <ul id="ul-list" class="draggable-list"></ul>
+                    <img id="img-note" src="/img/Noteimg.png" alt="" class="active">
+                    <p id="p-text" class="active">Try starring some tasks to see them here.</p>
+                </div>
+                <div id="right-container-main">
+                   <div id="right-container-main-1">
+                        <!--icona v nachaloto -->
+                        <button class="btn" onclick="addTask(); hiddenEl ()">click</button>
+                        <input id="task-input" type="text" name=""  placeholder="Add a task">
+                   </div> 
+                    <div id="right-container-main-2">
+                        <div id="tasks-input"><button>asd</button><!--icona--></div>
+                        <div id="tasks-input-data"><button>asd</button><!--icona--></div>
+                        <div id="tasks-input-remainder"><button>asd</button><!--icona--></div>
+                        <div id="tasks-input-repeat"><button>asd</button><!--icona--></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
